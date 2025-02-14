@@ -17,6 +17,10 @@ to run a *nightly* build of [GHDL](https://ghdl.github.io/ghdl/).
 
 First, the workflow uses GHDL to **analyze** all `.vhd` files in `src/`.
 
+---
+
+![Ripple Adder Waveform ICE3](ripple_adder_waveform.png)
+
 Then it **elaborates** the entity defined by `$TB_ENTITY`
 
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
