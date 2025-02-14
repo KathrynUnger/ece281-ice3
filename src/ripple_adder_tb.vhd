@@ -53,7 +53,7 @@ begin
        assert (w_sum = x"3" and w_Cout = '0') report "bad with 0010+0001" severity failure;
        --
        w_addends <= x"A0"; w_Cin <= '0'; wait for 10 ns;
-       assert (w_sum = x"A" and w_Count = '0') report "bad with 0000 + 1010" severity failure;
+       assert (w_sum = x"A" and w_Cout = '0') report "bad with 0000 + 1010" severity failure;
        --
        w_addends <= x"1E"; w_Cin <= '1'; wait for 10 ns;
        assert (w_sum = x"0" and w_Cout = '1') report "bad with 1110 + 0001" severity failure;
@@ -68,7 +68,7 @@ begin
        assert (w_sum = x"F" and w_Cout = '0') report "bad with 1001 + 0110" severity failure;
        --
        w_addends <= x"DD"; w_Cin <= '0'; wait for 10 ns;
-       assert (w_sum - x"A" and w_Cout = '1') report "bad with 1101 + 1101" severity failure;
+       assert (w_sum = x"A" and w_Cout = '1') report "bad with 1101 + 1101" severity failure;
 	
 		wait; -- wait forever
 	end process;	
