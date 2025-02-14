@@ -28,3 +28,10 @@ Assert statements of other severity levels will be reported, but not fail the wo
 ---
 
 ![Ripple Adder Waveform ICE3](ripple_adder_waveform.png)
+
+![Top Basys3 Entity Sketch](top_basys3_entity.png)
+
+---
+
+## Documentation
+Worked with C3C McIntyre on debugging my test benches. 
